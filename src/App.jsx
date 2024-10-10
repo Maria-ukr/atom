@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 import Questions from './components/Questions/Questions';
 import SearchBlock from './components/SearchBlock/SearchBlock';
 import Steps from './components/Steps/Steps';
@@ -11,6 +12,7 @@ function App () {
   return (
     <>
       <Topinfo />
+      <Header />
       <HowDoes />
       <WaysToUse />
       <Steps />

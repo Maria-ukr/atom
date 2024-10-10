@@ -1,0 +1,283 @@
+.container
+  max-width: 1140px
+  margin: 0 auto
+  @media(max-width: 1200px)
+    max-width: 960px
+  @media(max-width: 991px)
+    max-width: 720px
+  @media(max-width: 768px)
+    max-width: 540px
+  @media(max-width: 576px)
+    width: 100%
+.header
+  background-color: var(--white)
+  border-top: 1px solid var(--very-light-grey)
+  border-bottom: 1px solid var(--very-light-grey)
+  width: 100%
+  position: relative
+  z-index: 100
+  .wrapper
+    padding: 15px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a
+      font-size: 14px
+    @media(max-width: 576px)
+      padding: 15px
+.logo
+  margin-right: auto
+  img
+    width: 140px
+    height: auto
+    @media(max-width: 576px)
+      width: 120px
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media(max-width: 1200px)
+    display: none
+  .menu-item
+    padding: 0 20px
+    position: relative
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a
+      line-height: 40px
+      font-weight: 500
+      transition: all ease .3s
+    span
+      position: absolute
+      background-image: url('./icon-arrow-dark.svg')
+      background-repeat: no-repeat
+      width: 20px
+      height: 20px
+      right: 0
+    &:hover
+      span
+        background-image: url('./icon-arrow-blue.svg')
+      a
+        color: var(--mercury)
+      .sub-menu
+        display: block
+        a
+          font-size: 14px
+          font-weight: 500
+          line-height: 21px
+          color: rgb(23 23 23 / .8)
+          display: flex
+          align-items: center
+          position: relative
+          padding: 8px 10px
+          border-radius: 8px
+          transition: all ease .3s
+          &:hover
+            background-color: #f4f4f4
+            color: var(--mercury)
+.sub-menu
+  display: none
+  position: absolute
+  top: 100%
+  left: 0
+  background-color: var(--white)
+  box-shadow: 0 8px 40px rgb(0 0 0 / .06)
+  border-radius: 16px
+  padding: 16px
+  width: 220px
+.right-side
+  display: flex
+  justify-content: space-between
+  align-items: center
+  z-index: 50
+  .item
+    display: flex
+    align-items: center
+    position: relative
+    cursor: pointer
+    margin-right: 25px
+    height: 30px
+    &:last-child
+      margin-right: 0
+    &:hover
+      ul
+        display: block
+    img
+      width: 20px
+      height: 20px
+    ul
+      position: absolute
+      display: none
+      border-radius: 10px
+      top: 100%
+      right: -8px
+      background-color: var(--white)
+      box-shadow: 0 0 20px 0 rgb(0 0 0 / .2)
+      padding: 0.5rem 0
+      font-size: 1rem
+      min-width: 10rem
+      li
+        padding: 7px 10px
+        cursor: pointer
+        display: flex
+        width: 100%
+        line-height: 24px
+        margin: 0
+        &:hover
+          background-color: #f2f4f9
+          a
+            color: var(--mercury)
+          span
+            opacity: 1
+        span
+          opacity: 0.6
+          height: 30px
+          width: 30px
+          margin-right: 5px
+          display: block
+          background-repeat: no-repeat
+          background-size: 22px auto
+        a
+          line-height: 24px
+          display: block
+          color: var(--granite)
+.hamburger
+  position: relative
+  display: none
+  cursor: pointer
+  width: 23px
+  height: 16px
+  flex-direction: column
+  justify-content: space-around
+  margin-right: 13px
+  @media(max-width: 1200px)
+    display: flex
+  span
+    position: absolute
+    display: block
+    width: 23px
+    height: 2px
+    background-color: var(--black)
+    transition: all ease .3s
+    &:nth-child(1)
+      top: 0
+    &:nth-child(2)
+      top: 7px
+    &:nth-child(3)
+      top: 14px
+  &.show
+    span
+      &:nth-child(1)
+        top: 9px
+        transform: rotate(45deg)
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        top: 9px
+        transform: rotate(-45deg)
+.inner
+  visibility: hidden
+  transition: all ease .3s
+  position: absolute
+  top: 100%
+  left: 5px
+  right: 5px
+  bottom: 0
+  background-color: var(--white)
+  transition: all ease .3s
+  border-radius: 24px
+  height: 100vh
+  padding: 0 15px
+  z-index: 40
+.mobile-menu
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  .menu-item
+    margin: 0 0 15px 0
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    cursor: pointer
+    position: relative
+    a, p
+      padding: 8px 0
+      font-weight: 700
+      color: var(--dark-blue)
+      display: flex
+      justify-content: space-between
+      align-self: stretch
+      line-height: 1rem
+    &.visible
+      p
+        color: var(--mercury)
+        span
+          background-image: url('./icon-arrow-blue.svg')
+          transform: rotate(180deg)
+    span
+      background-image: url('./icon-arrow-dark.svg')
+      background-repeat: no-repeat
+      width: 20px
+      height: 20px
+      position: absolute
+      right: 0
+      top: 3px
+    ul
+      display: flex
+      width: 100%
+      box-shadow: none
+      padding: 0
+      flex-direction: column
+      li
+        margin: 0
+        a
+          padding: 5px 0 
+          font-weight: 400
+          line-height: 1.3rem
+          font-size: 0.9rem
+          &:hover
+            color: var(--mercury)
+  
+.form
+  width: 100%
+  border-bottom: 1px solid #edeff3
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+  .serch-icon
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    width: 30px
+    height: 30px
+  input
+    width: 100%
+    border: none
+    font-size: 1rem
+    line-height: 3.6rem
+    padding: 0 40px
+    &::placeholder
+      color: rgb(25 24 74 / .4)
+      letter-spacing: 0.04em
+  .btn
+    background: linear-gradient(450deg,#4a9dff 0,var(--mercury) 50%,#8e71d1 100%)
+    box-shadow: 0 16px 40px rgb(11 169 166 / .16)
+    border: none
+    border-radius: 50px
+    width: 40px
+    height: 40px
+    span
+      background-repeat: no-repeat
+      background-size: 20px auto
+      background-position: center
+      display: block
+      height: 11px
+      width: 25px
+    @media(max-width: 768px)
+      background: var(--red-orange)
+      background-size: contain
+.visible
+  visibility: visible
+  transition: all ease .3s
