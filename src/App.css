@@ -1,0 +1,17 @@
+@import url('./variables.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: #fbfbff;
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', 'Arial', 'Helvetica', 'Verdana', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #19184a;
+}

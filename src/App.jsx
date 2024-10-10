@@ -1,7 +1,12 @@
 import './App.css';
+import Topinfo from './components/TopInfo/Topinfo';
 
 function App () {
-  return <></>;
+  return (
+    <>
+      <Topinfo />
+    </>
+  );
 }
 
 export default App;
