@@ -1,0 +1,105 @@
+@import './../../_mixins.sass'
+.container
+  background: linear-gradient(0deg,rgb(0 0 0 / .02),rgb(0 0 0 / .02)),var(--white)
+  padding: 0 12px 80px
+  @media(max-width: 991px)
+    padding: 0 15px 60px
+.footer
+  @include container
+.wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-top: 1px solid #ddd
+  padding-top: 55px
+  @media(max-width: 991px)
+    flex-direction: column-reverse
+.copyrights
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .rights
+    color: var(--tyrian-purple)
+    text-align: center
+  .dot
+    border-radius: 50%
+    background-color: #858a99
+    width: 3px
+    height: 3px
+    margin: 0 15px
+  .link
+    text-align: center
+.socials
+  display: flex
+  @media(max-width: 576px)
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  @media(max-width: 991px)
+    margin-bottom: 35px
+  .list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .item
+      a
+        display: inline-block
+        margin: 0 5px
+        width: 30px
+        height: auto
+        img
+          object-fit: contain
+          object-position: center
+.mark
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media(max-width: 991px)
+    margin: 15px 0 25px
+    order: 1
+  @media(max-width: 576px)
+    flex-direction: column
+  .strong
+    font-weight: 700
+    font-size: 1.2rem
+    color: var(--black)
+    line-height: 2rem
+  .pilot
+    text-align: center
+    padding: 10px 25px
+    .subtext
+      font-weight: 700
+      font-size: 0.9rem
+      color: #999999
+      line-height: 1.5rem
+      span
+        background-image: url('./trustpilot-brand-icon.png')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        display: inline-block
+        width: 15px
+        height: 15px
+        margin-right: 2px
+    .stars
+      span
+        background-image: url('./trustpilot-star.png')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        display: inline-block
+        width: 25px
+        height: 25px
+        margin-right: 2px
+        &:last-child
+          background-image: url('./trustpilot-half-star.png')
+  .rate
+    border-left: 1px solid rgb(0 0 0 / .08)
+    padding: 10px 25px
+    text-align: center
+    @media(max-width: 576px)
+      border: none
+    .light
+      margin-top: 2px
+      font-size: 0.9rem
+      color: #999999

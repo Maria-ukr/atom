@@ -41,4 +41,26 @@ export default {
       text: 'Pick a Winner. The winner gets paid for their submission.',
     },
   ],
+  SOCIALS: [
+    {
+      label: 'facebook',
+      link: 'https://www.facebook.com/atomdotcom',
+    },
+    {
+      label: 'twitter',
+      link: 'https://twitter.com/squadhelp',
+    },
+    {
+      label: 'instagam',
+      link: 'https://www.instagram.com/workwithatom',
+    },
+    {
+      label: 'linkedIn',
+      link: 'https://www.linkedin.com/company/atomdotcom',
+    },
+    {
+      label: 'youtube',
+      link: 'https://www.youtube.com/@atomdotcom',
+    },
+  ],
 };

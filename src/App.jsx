@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer/Footer';
 import SearchBlock from './components/SearchBlock/SearchBlock';
 import Steps from './components/Steps/Steps';
 import HowDoes from './components/TopInfo/HowDoes/HowDoes';
@@ -13,6 +14,7 @@ function App () {
       <WaysToUse />
       <Steps />
       <SearchBlock />
+      <Footer />
     </>
   );
 }
