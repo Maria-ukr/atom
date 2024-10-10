@@ -1,0 +1,70 @@
+@import './../../_mixins.sass'
+.container
+  background: linear-gradient(271.19deg,rgb(68 51 241 / .04) 0%,rgb(98 142 255 / .04) 100%),var(--white)
+  padding: 80px 12px
+  @media(max-width: 991px)
+    padding: 60px 15px
+.section
+  @include container
+.wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+  img
+    object-fit: contain
+    object-position: center
+    margin-bottom: 20px
+    width: 70px
+  h3
+    font-weight: 700
+    font-size: 1.7rem
+    line-height: 2.1rem
+    margin-bottom: 40px
+    text-align: center
+    @media(max-width: 575px)
+      font-size: 1.5rem
+.list
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: 1fr
+  gap: 25px
+  margin: 30px 0
+  @media(max-width: 991px)
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+  @media(max-width: 575px)
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(4, 1fr)
+  li
+    box-shadow: 0 16px 32px rgb(0 0 0 / .04)
+    background-color: var(--white)
+    border-radius: 24px
+    padding: 25px 25px 45px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      background-image: url('./arrow-blue-right.svg')
+      background-repeat: no-repeat
+      top: 49%
+      right: -14px
+      height: 14px
+      width: 28px
+    &:last-child
+      &::after
+        display: none
+    span
+      background-color: #4942F3
+      font-weight: 700
+      font-size: 0.9rem
+      line-height: 2rem
+      padding: 0 1rem
+      border-radius: 20px
+      color: var(--white)
+      display: inline-block
+      margin-bottom: 15px
+    p
+      color: var(--sonic-silver)
+      line-height: 1.5rem
+      @media(max-width: 991px)
+        font-size: 0.9rem

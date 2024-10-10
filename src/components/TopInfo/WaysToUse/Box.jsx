@@ -13,7 +13,7 @@ function Box (props) {
         {link}
         <span
           style={{
-            backgroundImage: `url(${CONSTANTS.STATIC_IMAGES_PATH}icon-arrow-long-right.svg`,
+            backgroundImage: `url(${CONSTANTS.STATIC_IMAGES_PATH}/icon-arrow-long-right.svg`,
           }}
         ></span>
       </Link>

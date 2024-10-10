@@ -23,4 +23,22 @@ export default {
       link: 'Learn More',
     },
   ],
+  STEPS: [
+    {
+      step: 'Step 1',
+      text: 'Fill out your Naming Brief and begin receiving name ideas in minutes',
+    },
+    {
+      step: 'Step 2',
+      text: 'Rate the submissions and provide feedback to creatives. Creatives submit even more names based on your feedback.',
+    },
+    {
+      step: 'Step 3',
+      text: 'Our team helps you test your favorite names with your target audience. We also assist with Trademark screening.',
+    },
+    {
+      step: 'Step 4',
+      text: 'Pick a Winner. The winner gets paid for their submission.',
+    },
+  ],
 };
