@@ -13,25 +13,27 @@ function SearchBlock () {
         <div className={styles.wrap}>
           <Formik initialValues={{ search: '' }} onSubmit={handleSearch}>
             <Form className={styles.form}>
-              <span
-                style={{
-                  backgroundImage: `url(${CONSTANTS.STATIC_IMAGES_PATH}/search-icon.svg`,
-                }}
-                className={styles['serch-icon']}
-              ></span>
-              <Field
-                className={styles.input}
-                name='search'
-                type='text'
-                placeholder='Search Over 200,000+ Premium Names'
-              />
-              <button type='submit' className={styles.btn}>
+              <div className={styles['input-wrap']}>
                 <span
                   style={{
-                    backgroundImage: `url(${CONSTANTS.STATIC_IMAGES_PATH}/icon-arrow-long-right.svg`,
+                    backgroundImage: `url(${CONSTANTS.STATIC_IMAGES_PATH}/search-icon.svg`,
                   }}
+                  className={styles['serch-icon']}
                 ></span>
-              </button>
+                <Field
+                  className={styles.input}
+                  name='search'
+                  type='text'
+                  placeholder='Search Over 200,000+ Premium Names'
+                />
+                <button type='submit' className={styles.btn}>
+                  <span
+                    style={{
+                      backgroundImage: `url(${CONSTANTS.STATIC_IMAGES_PATH}/search-white-icon.svg`,
+                    }}
+                  ></span>
+                </button>
+              </div>
             </Form>
           </Formik>
           <div className={styles.tags}>

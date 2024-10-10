@@ -1,10 +1,9 @@
 @import './../../_mixins.sass'
 .container
-  background-color: rgb(99 124 247 / .08)
   padding: 40px 15px 60px
   border-bottom: 1px solid #edeff3
   @media(max-width: 991px)
-    padding: 60px 15px
+    padding: 30px 15px 50px
 .section
   @include container
 .wrap
@@ -13,64 +12,69 @@
   align-items: center
 .form
   width: 97%
-  display: flex
-  justify-content: space-between
-  align-items: center
-  position: relative
-  span
-    position: absolute
-    left: 0
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
-    width: 50px
-    height: 30px
-    display: block
-  .input
-    text-align: center
+  @media(max-width: 991px)
     width: 100%
-    background-color: var(--white)
-    font-size: 1.2rem
-    line-height: 4rem
-    color: var(--granite)
-    padding: 0 75px
-    border: none
-    border-radius: 50px
-    &::placeholder
-      color: rgb(25 24 74 / .4)
-    @media(max-width: 991px)
-      font-size: 1rem
-      padding: 0 65px
-    @media(max-width: 575px)
-      font-size: 0.9rem
-      padding: 0 50px
-  .btn
-    position: absolute
-    right: 16px
-    background-color: var(--red-orange)
-    box-shadow: 0 16px 40px rgb(11 169 166 / .16)
-    transition: all ease .6s
-    border-radius: 50%
-    border: none
-    width: 48px
-    height: 48px
-    padding: 0
-    @media(max-width: 991px)
-      right: 10px
-      width: 43px
-      height: 43px
-    span
-      top: 20%
-      bottom: 0
-      right: 0
-      left: -1px
+  .input-wrap
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    border-radius: 30px
+    background: linear-gradient(45deg,rgb(142 97 255 / .5333333333) 0,#339bf7 50%,rgb(43 198 215 / .431372549) 100%)
+    padding: 2px
+    .serch-icon
       position: absolute
-      background-size: 24px auto
+      left: 20px
       background-repeat: no-repeat
       background-position: center
+      background-size: contain
+      width: 20px
+      height: 20px
+      display: block
+    .input
+      width: 100%
+      background-color: var(--white)
+      font-size: 1.2rem
+      line-height: 4rem
+      color: #343434
+      padding: 0 50px 0 48px
+      border: none
+      border-radius: 50px
+      &::placeholder
+        color: rgb(25 24 74 / .4)
       @media(max-width: 991px)
-        top: 15%
-        left: -4px
+        font-size: 1rem
+        padding: 0 65px
+        line-height: 3rem
+      @media(max-width: 575px)
+        padding: 0 50px
+    .btn
+      position: absolute
+      right: 5px
+      background-color: #ff6955
+      box-shadow: 3px 3px 10px 0 rgb(255 104 85 / .3)
+      transition: all ease .6s
+      border-radius: 40px
+      border: none
+      width: 68px
+      height: 54px
+      padding: 0
+      @media(max-width: 991px)
+        width: 53px
+        height: 43px
+      span
+        top: 0
+        bottom: 0
+        right: 0
+        left: -1px
+        position: absolute
+        background-size: 21px auto
+        background-repeat: no-repeat
+        background-position: center
+        @media(max-width: 991px)
+          // top: 15%
+          // left: -4px
 .tags
   margin-top: 35px
   display: flex
@@ -79,11 +83,6 @@
   @media(max-width: 991px)
     flex-direction: column
     align-items: flex-start
-  span
-    font-weight: 500
-    margin-right: 12px
-    display: block
-    line-height: 1.5rem
   .list
     display: flex
     justify-content: space-between
@@ -99,11 +98,15 @@
       &:last-child
         margin-right: 0
       a
+        font-size: 0.8rem
         display: inline-block
         transition: all ease .3s
-        padding: 0.5rem 1rem
+        padding: 0.6rem 1.1rem
+        letter-spacing: 0.009rem
         border-radius: 20px
-        color: var(--mercury)
-        background-color: rgb(99 124 247 / .08)
+        color: #2b2aaa
+        background-color: rgb(43 42 170 / .1)
+        box-shadow: 0 1px 6px rgb(17 17 17 / .06)
+        backdrop-filter: blur(23.7219px)
         &:hover
           background: none
