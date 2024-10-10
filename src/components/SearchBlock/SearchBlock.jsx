@@ -37,7 +37,6 @@ function SearchBlock () {
             </Form>
           </Formik>
           <div className={styles.tags}>
-            <span>Popular searches</span>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <Link to='/'>Tech</Link>
