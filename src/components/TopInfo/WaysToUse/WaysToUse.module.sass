@@ -1,0 +1,104 @@
+@import './../../../_mixins.sass'
+
+.container
+  background: linear-gradient(271.19deg, rgba(48, 125, 246, .05) 0%, rgba(20, 187, 191, .05) 100%), var(--white)
+  padding: 60px 30px
+  @media(max-width: 991px)
+    padding: 60px 15px
+.section
+  @include container
+.wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+  .stiker
+    display: inline-block
+    color: var(--steel-blue)
+    font-size: 0.8rem
+    padding: 0.5rem 1rem
+    background: rgba(55, 125, 255, 0.1)
+    line-height: 21px
+    border-radius: 20px
+    transition: all 0.2s ease-in-out
+    margin-bottom: 0.5rem
+    letter-spacing: 0.006rem
+  h2
+    font-size: 2rem
+    line-height: 3rem
+    font-weight: 700
+    text-align: center
+    @media(max-width: 575px)
+      font-size: 1.9rem
+  .subtext
+    line-height: 1.5rem
+    margin-bottom: 30px
+    text-align: center
+    
+.list
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: 1fr
+  gap: 25px
+  @media(max-width: 991px)
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 2fr
+  @media(max-width: 767px)
+    gap: 10px
+  @media(max-width: 575px)
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(3, 1fr)
+    row-gap: 24px
+  .item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    background-color: var(--white)
+    padding: 25px
+    box-shadow: 0 16px 32px rgb(0 0 0 / .04)
+    border-radius: 24px
+    @media(max-width: 767px)
+      padding: 10px
+      align-items: center
+    img
+      object-fit: contain
+      object-position: center
+      margin-bottom: 10px
+      @media(max-width: 767px)
+        object-position: 7px center
+    h6
+      font-size: 1.3rem
+      font-weight: 700
+      line-height: 1.5rem
+      margin-bottom: 10px
+    p
+      color: var(--sonic-silver)
+      line-height: 1.5rem
+      margin-bottom: 3rem
+      @media(max-width: 767px)
+        text-align: center
+    .link
+      color: var(--white)
+      font-weight: 700
+      line-height: 1.5rem
+      background: linear-gradient(45deg,#5a73ed 0,#3d57d5 100%)
+      border-radius: 8px
+      transition: all ease .5s
+      padding: 10px 15px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &:hover
+        background: linear-gradient(-45deg,#5a73ed 0,#3d57d5 100%)
+        transition: all ease .5s
+        span
+          transform: translate(3px)
+      span
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        display: block
+        height: 13px
+        width: 25px
+        margin-left: 10px
+        transition: all ease .3s
