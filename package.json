@@ -1,16 +1,16 @@
 {
   "name": "atom",
-  "homepage": "https://masianuy.github.io/atom",
+  "homepage": "https://masianuy.github.io/atom/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "classnames": "^2.5.1",
