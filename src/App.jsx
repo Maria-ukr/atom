@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
+import Questions from './components/Questions/Questions';
 import SearchBlock from './components/SearchBlock/SearchBlock';
 import Steps from './components/Steps/Steps';
 import HowDoes from './components/TopInfo/HowDoes/HowDoes';
@@ -13,6 +14,7 @@ function App () {
       <HowDoes />
       <WaysToUse />
       <Steps />
+      <Questions />
       <SearchBlock />
       <Footer />
     </>
