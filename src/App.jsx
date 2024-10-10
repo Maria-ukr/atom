@@ -1,4 +1,5 @@
 import './App.css';
+import SearchBlock from './components/SearchBlock/SearchBlock';
 import Steps from './components/Steps/Steps';
 import HowDoes from './components/TopInfo/HowDoes/HowDoes';
 import Topinfo from './components/TopInfo/Topinfo';
@@ -11,6 +12,7 @@ function App () {
       <HowDoes />
       <WaysToUse />
       <Steps />
+      <SearchBlock />
     </>
   );
 }
