@@ -1,0 +1,72 @@
+@import './../../_mixins.sass'
+.container
+  background: linear-gradient(0deg,rgb(247 245 243 / .4),rgb(247 245 243 / .4)),var(--white)
+  padding: 80px 12px
+  @media(max-width: 991px)
+    padding: 60px 15px
+.section
+  @include container
+.wrap
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(4, 1fr)
+  grid-template-areas: "services tools sellers atom" "services tools creatives atom" "services tools creatives legal" "services tools . ."
+  grid-gap: 35px 20px
+  @media(max-width: 991px)
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: flex-start
+    
+  div
+    @media(max-width: 991px)
+      width: 45%
+    @media(max-width: 768px)
+      width: 100%
+.services
+  grid-area: services
+.tools
+  grid-area: tools
+.sellers
+  grid-area: sellers
+.atom
+  grid-area: atom
+.creatives
+  grid-area: creatives
+.legal
+  grid-area: legal
+h5
+  &.title
+  text-transform: capitalize
+  font-size: 1.3rem
+  font-weight: 700
+  margin-bottom: 20px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  cursor: pointer
+  span
+    display: none
+    @media(max-width: 991px)
+      display: block
+      background-image: url('./icon-arrow-blue.svg')
+      background-repeat: no-repeat
+      width: 20px
+      height: 20px
+    
+.list
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  @media(max-width: 991px)
+    display: none
+  .item
+    margin-bottom: 10px
+    a
+      font-size: 0.9rem
+      line-height: 1.3rem
+      transition: all ease .3s
+      &:hover
+        color: #637cf7
+.visible
+  display: flex

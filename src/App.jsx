@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
+import FooterMenu from './components/FooterMenu/FooterMenu';
 import Header from './components/Header/Header';
 import Questions from './components/Questions/Questions';
 import SearchBlock from './components/SearchBlock/SearchBlock';
@@ -18,6 +19,7 @@ function App () {
       <Steps />
       <Questions />
       <SearchBlock />
+      <FooterMenu />
       <Footer />
     </>
   );
