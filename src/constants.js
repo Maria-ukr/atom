@@ -1,5 +1,5 @@
 export default {
-  STATIC_IMAGES_PATH: 'https://masianuy.github.io/atom/staticImages',
+  STATIC_IMAGES_PATH: 'https://maria-ukr.github.io/atom/staticImages',
   WAYS_TO_USE_ITEMS: [
     {
       icon: 'icon-1',
